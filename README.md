@@ -31,7 +31,16 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=madasahatty&show_icons=true&locale=en" alt="madasahatty" /></p>
 
 
+## License
 
+The source code for this portfolio website is available under the MIT License.
+
+Unless otherwise stated, portfolio content—including project descriptions,
+screenshots, artwork, logos, résumé information, and other personal materials—
+is © 2026 Addison Hatfield and may not be reused without permission.
+
+Third-party libraries, assets, and resources remain subject to their respective
+licenses.
 
 
 
