@@ -9,12 +9,14 @@
    Global Styles
 ========================= */
 :root {
-  color-scheme: light dark;
-  --bg: #f5f7fb;
-  --text: #222;
-  --muted: #666;
-  --card: #fff;
-  --accent: #2563eb;
+    color-scheme: light;
+
+    --bg: #f5f7fb;
+    --text: #222;
+    --muted: #666;
+    --card: #fff;
+    --accent: #2563eb;
+    --border: #e5e7eb;
 }
 
 * {
@@ -34,10 +36,11 @@ body {
 }
 
 .site-header {
-  background: #fff;
-  border-bottom: 1px solid #e5e7eb;
-  position: sticky;
-  top: 0;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav {
@@ -100,4 +103,34 @@ footer {
   padding: 2rem 1rem;
   text-align: center;
   color: var(--muted);
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    padding: 0.75rem 1rem;
+    background: var(--accent);
+    color: white;
+    z-index: 2000;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+}
+
+section {
+    padding: 2rem 0;
+    scroll-margin-top: 5rem;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+    text-decoration: underline;
 }
